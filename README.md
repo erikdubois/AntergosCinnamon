@@ -18,8 +18,8 @@ http://build.antergos.com/browse/testing
 
 
 
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/achgnome1.jpg)
-![Screenshots](http://erikdubois.be/wp-content/uploads/2015/05/archgnome2.jpg)
+![Screenshots](http://i.imgur.com/LA2pp8u.jpg)
+![Screenshots](http://i.imgur.com/GHIjj9W.jpg)
 
 
 On the far right you see the conky "Aurora" hosted on Sourceforge.
@@ -111,7 +111,7 @@ The scripts have been numbered from 1 to 6. Follow the orderering to install all
 
 
     
-
+y
     ./1_install_packer_vx.sh
 
 This will install the program packer. It is a wrapper for yaourt which is already installed. Packer will serve as the aur helper from there on.
@@ -139,6 +139,8 @@ In the script you will see a text to know which one you need to choose.
     echo "################################################################"
     echo "spotify"
     echo "################################################################"
+
+
 
 When that is done you run
 
