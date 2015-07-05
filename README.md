@@ -1,9 +1,9 @@
-# AntergosGnome
+# AntergosCinnamon
 
-Antergos with the latest gnome edition.
+Antergos with the latest Cinnamon edition.
 
 
-This is my configuration for Gnome to be used on the Antergos distribution.
+This is my configuration for Cinnamon to be used on the Antergos distribution.
 
 I wrote an installation document "read_me_installation_antergos_ base_vx" to cover some specific issues.
 
@@ -88,7 +88,9 @@ At the time of writing you can choose
 	- xfce4
 	- openbox
 
-This page is about installing GNOME.
+This page is about installing Cinnamon.
+
+
 
 #2. Installation via script
 
@@ -97,7 +99,7 @@ I run an installation script to quickly  get all my software after the installat
 The idea is to download (if you have internet connection) the i3 github files :
 
 	sudo pacman -S git
-	git clone https://github.com/erikdubois/AntergosGnome
+	git clone https://github.com/erikdubois/AntergosCinnamon
 
 This folder that you will download will give you all the installation scripts necessary to fully install the desktop.
 
@@ -120,6 +122,7 @@ This will install the program packer. It is a wrapper for yaourt which is alread
     ./2_install_arch_repo _vx.sh
 
 This will install all programs coming from the "normal" arch repositories with the use of pacman.
+During the process you will have to type the password for vnstat.
 
 
 
@@ -160,6 +163,10 @@ The smb script is to install samba or the way to share folders and files between
 All theming for both archlinux and ubuntu based systems are hosted here : 
 
 https://github.com/erikdubois/themes-icons-pack
+
+You can also use the Sardi icon theme:
+
+https://github.com/erikdubois/Sardi
 
 
 <h2>Give it a go because <b> A N T E R G O S </b> deserves to be more known.</h2>
