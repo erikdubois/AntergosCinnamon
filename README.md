@@ -25,6 +25,8 @@ http://build.antergos.com/browse/testing
 
 ![Screenshots](http://i.imgur.com/GHIjj9W.jpg)
 
+![Screenshots](http://i.imgur.com/VkA55oa.jpg)
+
 
 On the far right you see the conky "Aurora" hosted on Sourceforge.
 
