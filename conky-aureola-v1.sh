@@ -79,7 +79,7 @@ if ! location="$(type -p "git")" || [ -z "git" ]; then
 	echo "installing curl for this script to work"
 	echo "#################################################"
 
-  	sudo apt install git
+  	sudo pacman -S git
 fi
 
 
@@ -114,7 +114,7 @@ if ! location="$(type -p "conky")" || [ -z "conky" ]; then
 	echo "installing curl for this script to work"
 	echo "#################################################"
 
-  	sudo apt install conky -y
+  	sudo pacman -S conky 
 fi
 
 
