@@ -170,6 +170,10 @@ The smb script is to install samba or the way to share folders and files between
 <h2>Give it a go because <b> A N T E R G O S </b> deserves to be more known.</h2>
 
 
+
+# Check out all the other scripts.
+
+
 ------------------------------------
 #But that is the fun in Linux.
 
