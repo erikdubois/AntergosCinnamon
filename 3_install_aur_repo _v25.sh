@@ -133,6 +133,7 @@ packer numix-circle-icon-theme  --noedit
 
 packer numix-themes-archblue --noedit
 packer gtk-theme-arc-git --noedit
+packer vertex-themes --noedit
 
 
 echo "################################################################"
