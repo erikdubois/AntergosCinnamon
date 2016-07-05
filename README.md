@@ -17,8 +17,12 @@ http://build.antergos.com/browse/testing
 # What can you achieve?
 
 
+![Screenshots](http://i.imgur.com/PnoSzJt.jpg)
+
 
 ![Screenshots](http://i.imgur.com/LA2pp8u.jpg)
+
+
 ![Screenshots](http://i.imgur.com/GHIjj9W.jpg)
 
 
@@ -159,16 +163,6 @@ The zsh script is an alternative for "bash" more colourfull (>100 themes) and mo
 
 The smb script is to install samba or the way to share folders and files between computers if you need it.
 
-
-# Themes and icons
-
-All theming for both archlinux and ubuntu based systems are hosted here : 
-
-https://github.com/erikdubois/themes-icons-pack
-
-You can also use the Sardi icon theme:
-
-https://github.com/erikdubois/Sardi
 
 
 <h2>Give it a go because <b> A N T E R G O S </b> deserves to be more known.</h2>
