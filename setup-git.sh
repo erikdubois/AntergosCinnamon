@@ -1,36 +1,34 @@
-#!/bin/bash
-#
-#                                       
-# MMMMMMMMMMMMMMMMMMMMMMMMMmds+.        
-# MMm----::-://////////////oymNMd+`     
-# MMd      /++                -sNMd:    
-# MMNso/`  dMM    `.::-. .-::.` .hMN:   
-# ddddMMh  dMM   :hNMNMNhNMNMNh: `NMm   
-#     NMm  dMM  .NMN/-+MMM+-/NMN` dMM   
-#     NMm  dMM  -MMm  `MMM   dMM. dMM   
-#     NMm  dMM  -MMm  `MMM   dMM. dMM   
-#     NMm  dMM  .mmd  `mmm   yMM. dMM   
-#     NMm  dMM`  ..`   ...   ydm. dMM   
-#     hMM- +MMd/-------...-:sdds  dMM   
-#     -NMm- :hNMNNNmdddddddddy/`  dMM   
-#      -dMNs-``-::::-------.``    dMM   
-#       `/dMNmy+/:-------------:/yMMM  
-#          ./ydNMMMMMMMMMMMMMMMMMMMMM  
-#             \.MMMMMMMMMMMMMMMMMMM    
-#                                      
-#
-#
-##################################################################################################################
-#
-# Current project : Ultimate-Linux-Mint-18
-#
-# Source 	: 	https://github.com/erikdubois/Ultimate-Linux-Mint-18
-#
-##################################################################################################################
+#!/bin/bash 
+############################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
 # Website 	: 	http://www.erikdubois.be
-##################################################################################################################
+############################################################################
+#
+#                                       
+#              `.-/::/-``
+#            .-/osssssssso/.               
+#           :osyysssssssyyys+-              
+#        `.+yyyysssssssssyyyyy+.           
+#       `/syyyyyssssssssssyyyyys-`         
+#      `/yhyyyyysss++ssosyyyyhhy/`         
+#     .ohhhyyyyso++/+oso+syy+shhhho.       
+#    .shhhhysoo++//+sss+++yyy+shhhhs.      
+#   -yhhhhs+++++++ossso+++yyys+ohhddy:     
+#  -yddhhyo+++++osyyss++++yyyyooyhdddy-    
+# .yddddhso++osyyyyys+++++yyhhsoshddddy`   
+#`odddddhyosyhyyyyyy++++++yhhhyosddddddo   
+#.dmdddddhhhhhhhyyyo+++++shhhhhohddddmmh.  
+#ddmmdddddhhhhhhhso++++++yhhhhhhdddddmmdy  
+#dmmmdddddddhhhyso++++++shhhhhddddddmmmmh  
+#-dmmmdddddddhhyso++++oshhhhdddddddmmmmd- 
+# .smmmmddddddddhhhhhhhhhdddddddddmmmms. 
+#   `+ydmmmdddddddddddddddddddmmmmdy/.     
+#      `.:+ooyyddddddddddddyyso+:.`                               
+#
+#
+#
+############################################################################
 # 
 # More from Erik Dubois
 #
@@ -52,16 +50,6 @@
 # https://github.com/erikdubois/Super-Ultra-Flat-Numix-Remix
 #
 # Check out the github - many more scripts for automatic installation of Linux Systems.
-#
-#
-#
-#
-#
-##################################################################################################################
-# If the option -y has been added. It will autoinstall all. Omit if you do not want that.
-##################################################################################################################
-#
-#
 #
 #
 ##################################################################################################################

@@ -56,50 +56,32 @@
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. AT YOUR OWN RISK.
 #
-###################################################################################################################
+##################################################################################################################
 
 
-# Installation of zsh and oh-my-zsh
-
-echo "################################################################"
-echo "installing zsh"
-echo "################################################################"
-
-sudo pacman -S zsh
+########################################
+########        I C O N S      #########
+########################################
 
 
-#zsh enhancements
-
-echo "################################################################"
-echo "installing zsh-completions"
-echo "################################################################"
-
-packer zsh-completions --noedit
 
 
-# Installation of OH-MY-ZSH from the github (best way to install!!)
+# S A R D I
+# from sourceforge 
 
-echo "################################################################"
-echo "downloading from github"
-echo "################################################################"
+version="5.6-0"
 
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+wget http://downloads.sourceforge.net/project/sardi/sardi-icons-$version.tar.gz -P /tmp/sardi
+cd /tmp/sardi
+tar -zxvf /tmp/sardi/sardi-icons-$version.tar.gz
+rm /tmp/sardi/sardi-icons-$version.tar.gz
 
-# changing the theme to random so you can enjoy tons of themes.
+# if there is no hidden folder conky then make one
+[ -d $HOME"/./icons" ] || mkdir -p $HOME"/.icons"
 
-sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
+cp -r /tmp/sardi/* ~/.icons/
+rm -rf /tmp/sardi
 
-# If above line did not work somehow. This is what you should do to enjoy the many themes.
-# go find the hidden .zshrc file and look for ZSH_THEME="robbyrussell" (CTRL+H to find hidden files)
-# change this to ZSH_THEME="random
-
-# You have to type this again - the password prompt is gone too fast
-
-echo "################################################################"
-echo "oh-my-zsh"
-echo "You might need to type this again. Use your own name"
-echo "sudo chsh username -s /bin/zsh"
-echo "################################################################"
 
 
 echo "################################################################"

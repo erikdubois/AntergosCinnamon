@@ -56,50 +56,21 @@
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. AT YOUR OWN RISK.
 #
-###################################################################################################################
+##################################################################################################################
 
 
-# Installation of zsh and oh-my-zsh
 
-echo "################################################################"
-echo "installing zsh"
-echo "################################################################"
+# C O N K Y   A U R O R A
+# from sourceforge 
 
-sudo pacman -S zsh
+wget https://sourceforge.net/projects/auroraconkytheme/files/Aurora_v3.0.4.tar.gz -P /tmp/aurora
+cd /tmp/aurora
+tar -zxvf /tmp/aurora/Aurora_v3.0.4.tar.gz
+rm /tmp/aurora/Aurora_v3.0.4.tar.gz
+echo "Hidden folder .conky is created if it is not there"
+[ -d "~/.conky" ] || mkdir -p $HOME/".conky"
+cp -r /tmp/aurora/* ~/.conky/
 
-
-#zsh enhancements
-
-echo "################################################################"
-echo "installing zsh-completions"
-echo "################################################################"
-
-packer zsh-completions --noedit
-
-
-# Installation of OH-MY-ZSH from the github (best way to install!!)
-
-echo "################################################################"
-echo "downloading from github"
-echo "################################################################"
-
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
-
-# changing the theme to random so you can enjoy tons of themes.
-
-sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
-
-# If above line did not work somehow. This is what you should do to enjoy the many themes.
-# go find the hidden .zshrc file and look for ZSH_THEME="robbyrussell" (CTRL+H to find hidden files)
-# change this to ZSH_THEME="random
-
-# You have to type this again - the password prompt is gone too fast
-
-echo "################################################################"
-echo "oh-my-zsh"
-echo "You might need to type this again. Use your own name"
-echo "sudo chsh username -s /bin/zsh"
-echo "################################################################"
 
 
 echo "################################################################"

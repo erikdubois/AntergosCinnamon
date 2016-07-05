@@ -56,52 +56,38 @@
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. AT YOUR OWN RISK.
 #
-###################################################################################################################
+##################################################################################################################
 
 
-# Installation of zsh and oh-my-zsh
+# if there is already a folder, delete or else do nothing
 
-echo "################################################################"
-echo "installing zsh"
-echo "################################################################"
-
-sudo pacman -S zsh
-
-
-#zsh enhancements
-
-echo "################################################################"
-echo "installing zsh-completions"
-echo "################################################################"
-
-packer zsh-completions --noedit
+echo "The script will install itself in the /tmp/hardcode-fixer folder"
+echo "It will run from there"
+echo "Upon next boot the tmp folder will be empty again"
+echo "#################################################"
 
 
-# Installation of OH-MY-ZSH from the github (best way to install!!)
+[ -d /tmp/hardcode-fixer ] && rm -rf "/tmp/hardcode-fixer" || echo ""
 
-echo "################################################################"
-echo "downloading from github"
-echo "################################################################"
+git clone https://github.com/Foggalong/hardcode-fixer /tmp/hardcode-fixer
 
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+if ! foobar_loc="$(type -p "curl")" || [ -z "curl" ]; then
 
-# changing the theme to random so you can enjoy tons of themes.
+	echo "#################################################"
+	echo "installing curl for this script to work"
+	echo "#################################################"
 
-sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
+  	sudo apt install curl
+fi
 
-# If above line did not work somehow. This is what you should do to enjoy the many themes.
-# go find the hidden .zshrc file and look for ZSH_THEME="robbyrussell" (CTRL+H to find hidden files)
-# change this to ZSH_THEME="random
+echo "#################################################"
+echo "Checking and changing all hardcoded icons"
+echo "#################################################"
 
-# You have to type this again - the password prompt is gone too fast
+sudo /tmp/hardcode-fixer/fix.sh
 
-echo "################################################################"
-echo "oh-my-zsh"
-echo "You might need to type this again. Use your own name"
-echo "sudo chsh username -s /bin/zsh"
-echo "################################################################"
-
-
+echo
+echo
 echo "################################################################"
 echo "###################    T H E   E N D      ######################"
 echo "################################################################"

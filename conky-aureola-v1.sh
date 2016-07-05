@@ -56,50 +56,72 @@
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. AT YOUR OWN RISK.
 #
-###################################################################################################################
+##################################################################################################################
+#
+########################################
+########        C O N K Y      #########
+########################################
 
 
-# Installation of zsh and oh-my-zsh
-
-echo "################################################################"
-echo "installing zsh"
-echo "################################################################"
-
-sudo pacman -S zsh
 
 
-#zsh enhancements
+# C O N K Y   A U R E O L A
+# from github
 
-echo "################################################################"
-echo "installing zsh-completions"
-echo "################################################################"
+# if there is already a folder, delete or else do nothing
+[ -d /tmp/aureola ] && rm -rf "/tmp/aureola" || echo ""
 
-packer zsh-completions --noedit
+#checking if git is installed else install it
+
+if ! location="$(type -p "git")" || [ -z "git" ]; then
+
+	echo "#################################################"
+	echo "installing curl for this script to work"
+	echo "#################################################"
+
+  	sudo apt install git
+fi
 
 
-# Installation of OH-MY-ZSH from the github (best way to install!!)
+# download the github in folder /tmp/aureola
+git clone https://github.com/erikdubois/Aureola /tmp/aureola
 
-echo "################################################################"
-echo "downloading from github"
-echo "################################################################"
+# if there is no hidden folder autostart then make one
+[ -d $HOME"/./config/autostart" ] || mkdir -p $HOME"/.config/autostart"
 
-wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
+# if there is no hidden folder conky then make one
+[ -d $HOME"/./config/conky" ] || mkdir -p $HOME"/.config/conky"
 
-# changing the theme to random so you can enjoy tons of themes.
+# if there is not hidden folder aureola then make one
+# my choice to put all config files in a hidden folder out of sight
+[ -d "~/.aureola" ] || mkdir -p $HOME/".aureola"
+# copy all config files to this hidden folder
+cp -r /tmp/aureola/* ~/.aureola
 
-sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
+# starting the standard conky so you can see it is working
+cp ~/.aureola/sys-info-mono-willemo/* ~/.config/conky
 
-# If above line did not work somehow. This is what you should do to enjoy the many themes.
-# go find the hidden .zshrc file and look for ZSH_THEME="robbyrussell" (CTRL+H to find hidden files)
-# change this to ZSH_THEME="random
+# making sure conky is started at boot
+cp ~/.aureola/sys-info-mono-willemo/start-conky.desktop ~/.config/autostart/start-conky.desktop
 
-# You have to type this again - the password prompt is gone too fast
+killall  conky
 
-echo "################################################################"
-echo "oh-my-zsh"
-echo "You might need to type this again. Use your own name"
-echo "sudo chsh username -s /bin/zsh"
-echo "################################################################"
+# checking if conky is installed else install it
+
+if ! location="$(type -p "conky")" || [ -z "conky" ]; then
+
+	echo "#################################################"
+	echo "installing curl for this script to work"
+	echo "#################################################"
+
+  	sudo apt install conky -y
+fi
+
+
+#starting the conky 
+conky -c ~/.config/conky/conky.conf
+
+
 
 
 echo "################################################################"

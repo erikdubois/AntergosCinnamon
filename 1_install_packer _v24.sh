@@ -1,4 +1,11 @@
-#!/bin/bash
+!/bin/bash 
+############################################################################
+# Written to be used on 64 bits computers
+# Author 	: 	Erik Dubois
+# Website 	: 	http://www.erikdubois.be
+############################################################################
+#
+#                                       
 #              `.-/::/-``
 #            .-/osssssssso/.               
 #           :osyysssssssyyys+-              
@@ -17,15 +24,39 @@
 #-dmmmdddddddhhyso++++oshhhhdddddddmmmmd- 
 # .smmmmddddddddhhhhhhhhhdddddddddmmmms. 
 #   `+ydmmmdddddddddddddddddddmmmmdy/.     
-#      `.:+ooyyddddddddddddyyso+:.`
-#======================================================================================
-#                              G N O M E
+#      `.:+ooyyddddddddddddyyso+:.`                               
+#
+#
+#
+############################################################################
 # 
-# Author  : Erik Dubois at http://www.erikdubois.be
-# License : Distributed under the terms of GNU GPL version 2 or later
+# More from Erik Dubois
+#
+# Aurora Conky
+# at http://sourceforge.net/projects/auroraconkytheme/
+# Explanation on the use of this theme can be found at 
+# http://erikdubois.be/category/linux/aurora-conky/
 # 
-# AS ALLWAYS, KNOW WHAT YOU ARE DOING.
-#======================================================================================
+# Aureola Conky
+# Collections of nice conky's with lua syntax
+# https://github.com/erikdubois/Aureola
+#
+# Sardi icons
+# Many different styles of icons from colourfull, monochrome, white, circle
+# https://sourceforge.net/projects/sardi/
+#
+# Super Ultra Flat Numix Remix
+# Colourfull and playfull icons
+# https://github.com/erikdubois/Super-Ultra-Flat-Numix-Remix
+#
+# Check out the github - many more scripts for automatic installation of Linux Systems.
+#
+#
+##################################################################################################################
+#
+#   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. AT YOUR OWN RISK.
+#
+##################################################################################################################
 
 # Made to be installed on a Antergos Gnome Arch
 
@@ -42,12 +73,6 @@
 
 # sudo pacman -S nvidia-340xx
 
-
-# Standard Menu system for i3
-# sudo pacman -S dmenu
-# if you want to have dmenu with LARGER fonts as they are relatively
-# small depending on your screen
-# You should install dmenu-xft which I will do later on when we can download from AUR
 
         # A U R   H E L P E R #
 
