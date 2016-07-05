@@ -28,7 +28,7 @@ http://build.antergos.com/browse/testing
 ![Screenshots](http://i.imgur.com/VkA55oa.jpg)
 
 
-On the far right you see the conky "Aurora" hosted on Sourceforge.
+You can add the conky "Aurora" hosted on Sourceforge or aureola hosted on github.
 
 http://sourceforge.net/projects/auroraconkytheme/
 
