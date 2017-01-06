@@ -12,8 +12,25 @@
 ##################################################################################################################
 
 
+program="gnome-terminal-transparency"
 
-pacaur -S --noconfirm --noedit gnome-terminal-transparency
+
+if which pacaur > /dev/null; then
+
+	echo "Installing with pacaur"
+	pacaur -S --noconfirm --noedit  $program
+
+elif which packer > /dev/null; then
+
+	echo "Installing with packer"
+	packer -S --noconfirm --noedit  $program 	
+
+elif which yaourt > /dev/null; then
+
+	echo "Installing with yaourt"
+	yaourt -S --noconfirm --noedit  $program
+		  	
+fi
 
 
 
