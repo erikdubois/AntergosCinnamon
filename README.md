@@ -3,7 +3,7 @@
 
 Let us first take a screenshot of the initial look of this distro.
 
-![Screenshots](http://i.imgur.com/vyZO7pC.png)
+![Screenshots](http://i.imgur.com/ZGegr20.jpg)
 
 ##Update your system.
 
@@ -84,7 +84,7 @@ You can also use
 	- yaourt -S sardi-icons 
 
 
-![Screenshots](http://i.imgur.com/5gXeRId.jpg)
+![Screenshots](http://i.imgur.com/xtOZKbX.jpg)
 
 
 Sardi is **meant to be changed by the users**. You can use scripts to change the hexadecimal colour code in about 3 seconds.
@@ -107,7 +107,7 @@ https://github.com/erikdubois/Sardi-Extra
 
 These icons can be downloaded but will not be maintained. Nor are they part of the core icons of Sardi. They are the result of ideas and scripts that are included in Sardi icons.
 
-![Screenshots](http://i.imgur.com/ADYgJom.jpg)
+![Screenshots](http://i.imgur.com/W8HfRPJ.jpg)
 
 More documentation on http://erikdubois.be/category/sardi-icons/
 
@@ -126,7 +126,7 @@ You can also use
 	- yaourt -S surfn-icons 
 
 
-![Screenshots](http://i.imgur.com/UWX8NYi.jpg)
+![Screenshots](http://i.imgur.com/g9jtffi.jpg)
 
 
 
@@ -210,7 +210,7 @@ copy/paste this command in your terminal.
 # Youtube Resources
 
 
-None
+https://www.youtube.com/playlist?list=PLlloYVGq5pS5DGx2EHIZxOGVTf9JikalO
 
 
 
