@@ -12,31 +12,9 @@
 ##################################################################################################################
 
 
-program="cnijfilter2-mg7700"
+program="insync"
+command="insync"
 
-if which pacaur > /dev/null; then
-
-	echo "Installing with pacaur"
-	pacaur -S --noconfirm --noedit  $program
-
-elif which packer > /dev/null; then
-
-	echo "Installing with packer"
-	packer -S --noconfirm --noedit  $program 	
-
-elif which yaourt > /dev/null; then
-
-	echo "Installing with yaourt"
-	yaourt -S --noconfirm  $program
-		  	
-fi
-
-
-
-
-
-
-program="scangearmp2-mg7700"
 
 if which pacaur > /dev/null; then
 
@@ -57,10 +35,16 @@ fi
 
 
 
-############################################################################
+if which $command > /dev/null; then
+	
+	echo "################################################################"
+	echo "################################## "$command" has been installed"
+	echo "################################################################"
 
-echo "################################################################"
-echo "###################    canon installed    ######################"
-echo "################################################################"
+	else
 
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "$command" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
+fi

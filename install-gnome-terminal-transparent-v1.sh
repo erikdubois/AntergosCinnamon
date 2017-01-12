@@ -13,27 +13,38 @@
 
 
 program="gnome-terminal-transparency"
+command="gnome-terminal"
 
 
 if which pacaur > /dev/null; then
 
 	echo "Installing with pacaur"
-	pacaur -S --noconfirm --noedit  $program
+	pacaur -S --noedit  $program
 
 elif which packer > /dev/null; then
 
 	echo "Installing with packer"
-	packer -S --noconfirm --noedit  $program 	
+	packer -S --noedit  $program 	
 
 elif which yaourt > /dev/null; then
 
 	echo "Installing with yaourt"
-	yaourt -S --noconfirm --noedit  $program
+	yaourt -S $program
 		  	
 fi
 
 
 
-echo "################################################################"
-echo "##############       teamviewer installed      #################"
-echo "################################################################"
+if which $command > /dev/null; then
+	
+	echo "################################################################"
+	echo "################################## "$command" has been installed"
+	echo "################################################################"
+
+	else
+
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "$command" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+fi

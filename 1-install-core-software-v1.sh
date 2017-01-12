@@ -12,36 +12,25 @@
 ##################################################################################################################
 
 #software from 'normal' repositories
-sudo pacman -S --noconfirm arc-gtk-theme archey-3catfish clementine curl darktable dconf-editor dmidecode evolution filezilla geary gimp git gpick
-sudo pacman -S --noconfirm glances gparted grsync hardinfo hddtemp hexchat htop inkscape inxi lm_sensors mlocate numlockx
-sudo pacman -S --noconfirm openshot pinta plank screenfetch scrot shotwell shutter sane simple-scan simplescreenrecorder skype sysstat
-sudo pacman -S --noconfirm terminator thunar unclutter variety vlc vnstat wget 
+sudo pacman -S --noconfirm --needed arc-gtk-theme archey3 catfish clementine curl darktable dconf-editor
+sudo pacman -S --noconfirm --needed dmidecode evolution filezilla geary gimp git glances gparted gpick grsync
+sudo pacman -S --noconfirm --needed hardinfo hddtemp hexchat htop inkscape inxi lm_sensors meld mlocate
+sudo pacman -S --noconfirm --needed numlockx openshot pinta plank sane screenfetch scrot shotwell 
+sudo pacman -S --noconfirm --needed shutter simplescan simplescreenrecorder sysstat 
+sudo pacman -S --noconfirm --needed terminator thunar variety vlc vnstat wget unclutter  
 
-
-#operating specific software
-
-# sudo pacman -S nemo-compare --noconfirm
 
 ###############################################################################################
 
 # installation of zippers and unzippers
-sudo pacman -S --noconfirm   unace unrar zip unzip sharutils  uudeview  arj cabextract file-roller
+sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  arj cabextract file-roller
 
 ###############################################################################################
 
-systemctl enable vnstat
-systemctl start vnstat
 
-
-# Remember
-
-# http://www.linuxveda.com/2013/04/02/how-to-install-and-configure-hp-printer-in-arch-linux/
-
-# edit following file dll.conf and uncomment line with #hpaio
-# This is my current network printer hp aio photosmart 7520
-
-# sudo nano /etc/sane.d/dll.con
-
+numlockx on
+sudo systemctl enable vnstat
+sudo systemctl start vnstat
 
 echo "################################################################"
 echo "###################    core software installed  ################"

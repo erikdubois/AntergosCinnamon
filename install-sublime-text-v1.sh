@@ -13,7 +13,7 @@
 
 
 program="sublime-text-dev"
-
+command="subl3"
 
 if which pacaur > /dev/null; then
 
@@ -28,18 +28,23 @@ elif which packer > /dev/null; then
 elif which yaourt > /dev/null; then
 
 	echo "Installing with yaourt"
-	yaourt -S --noconfirm --noedit  $program
+	yaourt -S --noconfirm $program
 		  	
 fi
 
 
 
 
+if which $command > /dev/null; then
+	
+	echo "################################################################"
+	echo "################################## "$command" has been installed"
+	echo "################################################################"
 
-##################################################################################################################
+	else
 
-echo "################################################################"
-echo "###################    T H E   E N D      ######################"
-echo "################################################################"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "$command" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
-
+fi

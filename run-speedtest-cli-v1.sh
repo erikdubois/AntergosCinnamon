@@ -11,21 +11,21 @@
 #
 ##################################################################################################################
 
-#https://github.com/horst3180/arc-theme
 
-rm -rf /tmp/arc-theme
+        # S P E E D T E S T #
 
-sudo pacman -S--needed --noconfirm autoconf automake pkg-config inkscape optipng
-git clone https://github.com/horst3180/arc-theme --depth 1 /tmp/arc-theme
-cd /tmp/arc-theme
-sh autogen.sh --prefix=/usr
-sudo make install
+# terminal speedtest
+wget https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py -O /tmp/speedtest.py
+chmod +x /tmp/speedtest.py
+python /tmp/speedtest.py --share
+# https://github.com/sivel/speedtest-cli
 
-rm -rf /tmp/arc-theme
 
-# sudo rm -rf /usr/share/themes/{Arc,Arc-Darker,Arc-Dark}
 
+##################################################################################################################
 
 echo "################################################################"
-echo "###################    arc theme installed #####################"
+echo "###################    Speedtest          ######################"
 echo "################################################################"
+
+

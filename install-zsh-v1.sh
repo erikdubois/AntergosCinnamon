@@ -28,28 +28,63 @@
 # AS ALLWAYS, KNOW WHAT YOU ARE DOING.
 #======================================================================================
 
-# Installation of zsh and oh-my-zsh
+# Installation of zsh
 
-echo "################################################################"
-echo "installing zsh"
-echo "################################################################"
+command="zsh"
 
-sudo pacman -S zsh --noconfirm
+sudo pacman -S --noconfirm zsh
+
+
+if which $command > /dev/null; then
+	
+	echo "################################################################"
+	echo "################################## "$command" has been installed"
+	echo "################################################################"
+
+	else
+
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! "$command" has NOT been installed"
+	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+fi
+
 
 
 #zsh enhancements
 
+program="zsh-completions"
+command="zsh-completions"
+
+if which pacaur > /dev/null; then
+
+	echo "Installing with pacaur"
+	pacaur -S --noconfirm --noedit  $program
+
+elif which packer > /dev/null; then
+
+	echo "Installing with packer"
+	packer -S --noconfirm --noedit  $program 	
+
+elif which yaourt > /dev/null; then
+
+	echo "Installing with yaourt"
+	yaourt -S --noconfirm $program
+		  	
+fi
+
+	
 echo "################################################################"
-echo "installing zsh-completions"
+echo "################################## "$command" has been installed"
 echo "################################################################"
 
-packer zsh-completions --noedit --noconfirm
+
 
 
 # Installation of OH-MY-ZSH from the github (best way to install!!)
 
 echo "################################################################"
-echo "downloading from github"
+echo "downloading Oh-My-Zsh from github"
 echo "################################################################"
 
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
@@ -63,15 +98,13 @@ sudo sed -i 's/ZSH_THEME=\"robbyrussell\"/ZSH_THEME=\"random\"/g' ~/.zshrc
 # change this to ZSH_THEME="random"
 
 
-echo
-echo
-echo
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "Often you do not get the chance to type your password"
-echo "Retype this line again and fill in your own username"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "sudo chsh username -s /bin/zsh"
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo
-echo
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "Log off or reboot to see the change in your terminal".
-echo "----------------------------------------------------"
+echo "--------------------------------------------------------------"

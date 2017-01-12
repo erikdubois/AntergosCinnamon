@@ -11,27 +11,13 @@
 #
 ##################################################################################################################
 
+command="packer"
 
-program="gradio"
-command="gradio"
+echo "################################################################"
+echo "packer will be installed now"
+echo "################################################################"
 
-
-if which pacaur > /dev/null; then
-
-	echo "Installing with pacaur"
-	pacaur -S --noconfirm --noedit  $program
-
-elif which packer > /dev/null; then
-
-	echo "Installing with packer"
-	packer -S --noconfirm --noedit  $program 	
-
-elif which yaourt > /dev/null; then
-
-	echo "Installing with yaourt"
-	yaourt -S --noconfirm  $program
-		  	
-fi
+yaourt --noconfirm packer 
 
 
 
@@ -48,6 +34,3 @@ if which $command > /dev/null; then
 	echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 fi
-
-
-
