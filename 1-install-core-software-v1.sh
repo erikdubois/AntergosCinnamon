@@ -28,7 +28,6 @@ sudo pacman -S --noconfirm --needed unace unrar zip unzip sharutils  uudeview  a
 ###############################################################################################
 
 
-numlockx on
 sudo systemctl enable vnstat
 sudo systemctl start vnstat
 
