@@ -13,7 +13,7 @@
 ##################################################################################################################
 
 
-dconf load /org/cinnamon/desktop/keybindings/  <  all-cinnamon-desktop-keybindings.dconf
+dconf load /org/cinnamon/desktop/keybindings/  <  all-keybindings.dconf
 
 
 echo "################################################################"
