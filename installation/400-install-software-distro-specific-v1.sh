@@ -24,7 +24,7 @@ sudo pacman -S noto-fonts --noconfirm --needed
 
 #Utilities
 
-sudo pacman -S compton  --noconfirm --needed
+#sudo pacman -S compton  --noconfirm --needed
 
 
 echo "################################################################"
