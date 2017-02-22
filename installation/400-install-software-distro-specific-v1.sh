@@ -1,6 +1,6 @@
 #!/bin/bash
 #never use the next line in this script or pasystray will not be installed
-#set -e
+set -e
 ##################################################################################################################
 # Written to be used on 64 bits computers
 # Author 	: 	Erik Dubois
@@ -18,13 +18,8 @@ echo "################################################################"
 
 #Fonts
 
-
 sudo pacman -S noto-fonts --noconfirm --needed
 
-
-#Utilities
-
-#sudo pacman -S compton  --noconfirm --needed
 
 
 echo "################################################################"
