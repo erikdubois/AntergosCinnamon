@@ -1,6 +1,6 @@
 # AntergosCinnamon
 
-#How to install Antergos Cinnamon and customize it
+##How to install Antergos Cinnamon and customize it
 
 All information about the installation and customization of Antergos Cinnamon can be found in this article : 
 
