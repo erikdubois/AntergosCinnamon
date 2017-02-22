@@ -17,7 +17,7 @@ dconf dump /org/cinnamon/desktop/keybindings/ > all-keybindings.dconf
 
 
 echo "################################################################"
-echo "###################    shortcuts loaded   ######################"
+echo "###################    shortcuts dumped   ######################"
 echo "################################################################"
 
 sleep 1
