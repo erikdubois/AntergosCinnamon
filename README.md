@@ -14,16 +14,6 @@ Let us first take a screenshot of the initial look of this distro.
 ![Screenshots](http://i.imgur.com/ZGegr20.jpg)
 
 
-##Update your system.
-
-**Pamac** will alert you or use commands like
-	
-	sudo pacman -Syu
-	packer -Syu
-	pacaur -Syu
-	yaourt -Syu
-
-
 ##Software installation
 
 We start the installation scripts of all the needed software via the terminal.
