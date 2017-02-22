@@ -14,8 +14,9 @@ set -e
 #making the tmpfs bigger with 1GB to ensure completion of scripts
 #https://wiki.archlinux.org/index.php/Tmpfs
 #this line was only necessary for vmware installations and virtualbox installations
+
 #but does not seem to hurt installations on ssd or hd.
-sudo mount -o remount,size=4G,noatime /tmp
+#sudo mount -o remount,size=4G,noatime /tmp
 
 # install awesome font for conky status bar
 
