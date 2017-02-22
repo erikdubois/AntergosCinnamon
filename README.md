@@ -2,7 +2,7 @@
 
 ##How to install Antergos Cinnamon and customize it
 
-All information about the installation and customization of Antergos Cinnamon can be found in this article and is explained in **several youtube tutorials** : 
+All information about the installation and customization of Antergos Cinnamon can be found in this **article** and is explained in **several youtube tutorials** : 
 
 http://erikdubois.be/how-to-install-cinnamon-on-antergos-and-customize-it/
 
