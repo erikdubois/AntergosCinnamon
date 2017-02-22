@@ -59,7 +59,7 @@ Ofcourse you can install new themes. I like the **Arc** theme which I will use i
 
 I install the **original blue** Arc theme but also my personally created Arc themes (see Arc Colora folder).
 
-	install-gtk-arc-theme-vx.sh
+
 
 ##Install your individual Arc Theme
 
@@ -72,9 +72,8 @@ More info about Arc Colora : https://github.com/erikdubois/Arc-Theme-Colora
 
 ##Download the Sardi icons
 
-You can install the sardi icons via these scripts
+You can install the sardi icons via the scripts
 
-	icons-sardi-vx.sh
 
 This icon theme can be downloaded at sourceforge.
 
@@ -118,9 +117,8 @@ More documentation on http://erikdubois.be/category/sardi-icons/
 ##Download the Surfn icons
 
 
-For ease of installation I use the script
+For ease of installation I use the script.
 
-	- icons-surfn-vx.sh
 
 You can also use
 
@@ -154,8 +152,6 @@ More information can be found here : http://erikdubois.be/category/linux/aureola
 I like the breeze cursors.
 
 
-	install-breeze-cursor-theme-v1
-
 ![Screenshots](http://i.imgur.com/wHp0I9s.png)
 
 	
@@ -164,9 +160,8 @@ I like the breeze cursors.
 
 Plank is installed via the main scripts.
 
-If you want to install 100+ plank themes, you need to run this script : 
+If you want to install 100+ plank themes, you need to run the script.
 
-	plank-themes-vx.sh
 
 Find plank in the menu and start it. <b>CTRL + Right-click</b> on the plank and choose preferences
 and put in on top. 
@@ -186,10 +181,7 @@ Read more on plank e.g. how to autostart plank on boot : http://erikdubois.be/ca
 
 ##Change from bash to zsh in your terminal
 
-I like bash but I prefer zsh with lots of different themes from oh-my-zsh to spice things up. So let us install that via this script.
-
-
-	./install-zsh-vx.sh
+I like bash but I prefer zsh with lots of different themes from oh-my-zsh to spice things up. So let us install that via the script.
 
 
 ![Screenshots](http://i.imgur.com/kehYX70.jpg)
@@ -210,11 +202,16 @@ copy/paste this command in your terminal.
 
 
 
-# Youtube Resources
+# Youtube Resources Antergos Cinnamon
+
+
+https://www.youtube.com/playlist?list=PLlloYVGq5pS7Tb7PZ5eVkEWGj9UimJ5x6
+
+
+# Youtube Resources all Antergos
 
 
 https://www.youtube.com/playlist?list=PLlloYVGq5pS5DGx2EHIZxOGVTf9JikalO
-
 
 
 # Resources
