@@ -9,7 +9,7 @@ set -e
 #======================================================================================
 
 echo "################################################################"
-echo "####  F I N D I N G   S E R V E R S    B E  P A T I E N T    ###"
+echo "####             finding fastest antergos servers              ###"
 echo "################################################################"
 
 # finding the fastest antergos servers
@@ -17,7 +17,7 @@ sudo rankmirrors -n 0 /etc/pacman.d/antergos-mirrorlist > /tmp/antergos-mirrorli
 
 
 echo "################################################################"
-echo "####       fastest servers in your neighbourhood saved       ###"
+echo "##########       fastest antergos servers saved        #########"
 echo "################################################################"
 
 cat /etc/pacman.d/antergos-mirrorlist
@@ -27,7 +27,6 @@ echo "Checking for possible updates"
 echo "################################################################"
 
 sudo pacman -Syu
-
 
 echo "################################################################"
 echo "##########  Your system is now up to date      #################"
