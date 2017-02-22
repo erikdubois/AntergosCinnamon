@@ -184,11 +184,7 @@ Go inside the folder and right-click <b>in a blank space</b> to go to the termin
 
 or 
 
-copy/paste this command in your terminal.
-
-	git clone https://github.com/erikdubois/AntergosGnome
-
-
+use the git clone command
 
 
 
