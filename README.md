@@ -21,7 +21,6 @@ Let us first take a screenshot of the initial look of this distro.
 
 ![Screenshots](http://i.imgur.com/jx9aceG.jpg)
 
-![Screenshots](http://i.imgur.com/xOV8HPM.jpg)
 
 ![Screenshots](http://i.imgur.com/orpjYMt.jpg)
 
