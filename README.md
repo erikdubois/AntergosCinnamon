@@ -6,12 +6,20 @@ All information about the installation and customization of Antergos Cinnamon ca
 
 http://erikdubois.be/how-to-install-cinnamon-on-antergos-and-customize-it/
 
+Official antergos downloads can be found at 
+http://antergos.com/try-it/
+
 
 # Initial look
 
 Let us first take a screenshot of the initial look of this distro.
 
 ![Screenshots](http://i.imgur.com/ZGegr20.jpg)
+
+
+# What can you achieve?
+
+![Screenshots](http://i.imgur.com/jx9aceG.jpg)
 
 
 ##Software installation
@@ -37,10 +45,7 @@ Some of the applications that will be installed are
 
 There are other scripts for more applications. If needed, you can install them individually.
 
-##Change the theme
 
-Sometimes you can change the present theme to its dark equivalent. This is the case in Gnome. 
-In the gnome-tweak-tool you can change this.
 
 ##Install Arc Theme
 
@@ -58,6 +63,7 @@ You can change the blue accent colour from the Arc theme with these scripts to *
 Read here for more info on Arc Based Themes : http://erikdubois.be/category/themes/arc-based-themes/
 
 More info about Arc Colora : https://github.com/erikdubois/Arc-Theme-Colora
+
 
 
 ##Download the Sardi icons
