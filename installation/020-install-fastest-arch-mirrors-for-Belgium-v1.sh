@@ -18,7 +18,7 @@ sudo pacman -S --noconfirm --needed reflector
 
 
 echo "################################################################"
-echo "####   finding fastest arch servers be in BE NL FR DE GB    ####"
+echo "####   finding fastest servers be patient in BE NL FR DE GB  ###"
 echo "################################################################"
 
 sudo reflector -l 100 -f 50 -c BE -c NL -c FR -c DE -c GB --sort rate --threads 5 --verbose --save /tmp/mirrorlist.new && rankmirrors -n 0 /tmp/mirrorlist.new > /tmp/mirrorlist && sudo cp /tmp/mirrorlist /etc/pacman.d
